@@ -1,0 +1,10 @@
+{
+  "name": "minubooks",
+  "version": "0.0.1",
+  "description": "Este projeto tem como propósito treinar as minhas habilidades com MongoDB e Kafka",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Vitor-Gouveia/Minu.books.git",
+  "author": "Vitor Gouveia <vitor.gouveia@minu.co>",
+  "license": "MIT",
+  "private": true
+}
