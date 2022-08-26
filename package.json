@@ -2,9 +2,12 @@
   "name": "minubooks",
   "version": "0.0.1",
   "description": "Este projeto tem como propósito treinar as minhas habilidades com MongoDB, Kafka e Docker.",
-  "main": "dist/index.js",
   "repository": "https://github.com/Vitor-Gouveia/Minu.books.git",
   "author": "Vitor Gouveia <vitor.gouveia@minu.co>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.2.3"
 }
