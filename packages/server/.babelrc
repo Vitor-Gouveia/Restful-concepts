@@ -11,7 +11,7 @@
     ["babel-plugin-module-resolver", {
       "root": ["./"],
       "alias": {
-        "@": "./src"
+        "@": "./lib"
       }
     }]
   ],
