@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "minify"
+  ],
+  "plugins": [
+    ["babel-plugin-module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@": "./src"
+      }
+    }]
+  ],
+  "ignore": [
+    "**/*.spec.ts"
+  ]
+}
