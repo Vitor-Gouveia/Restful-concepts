@@ -1,1 +1,1 @@
-export const kafka = ""
+export const kafka = ''
