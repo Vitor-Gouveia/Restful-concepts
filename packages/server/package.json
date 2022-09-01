@@ -7,8 +7,9 @@
   "scripts": {
     "watch": "babel lib --watch --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "nodemon dist",
-    "build": "babel src --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "node dist/index.js"
+    "build": "babel lib --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
+    "start": "node dist/index.js",
+    "test": "NODE_ENV=test && mocha **/test/**/*.spec.{js,mjs} --reporter spec"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
