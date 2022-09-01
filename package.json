@@ -10,14 +10,17 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint --fix --ext .js ."
+    "lint": "eslint --fix --ext .js .",
+    "test": "NODE_ENV=test && mocha **/test/**/*.spec.{js,mjs} --reporter spec"
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
+    "chai": "^4.3.6",
     "eslint": "^8.0.1",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "mocha": "^10.0.0"
   }
 }

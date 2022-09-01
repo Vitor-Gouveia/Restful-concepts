@@ -11,11 +11,11 @@
     ["babel-plugin-module-resolver", {
       "root": ["./"],
       "alias": {
-        "@": "./src"
+        "@": "./lib"
       }
     }]
   ],
   "ignore": [
-    "**/*.spec.ts"
+    "**/*.spec.js"
   ]
 }
