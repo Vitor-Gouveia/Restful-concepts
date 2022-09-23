@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    container_name: cache
+    expose:
+      - 6379
+  api:
+    build: .
+    command: npm start
+    links:
+      - redis
+    environment:
+      - NODE_ENv=production
+      - PORT=3000
+      - REDIS_URL=redis://cache
+    ports:
+      - "3333:3333"
+    volumes:
+      - .:/apps/minubooks

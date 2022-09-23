@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
     "resolveJsonModule": true,
-    "baseUrl": "lib",
-    "paths": {
-      "@/*": ["./*"]
-    }
   }
 }

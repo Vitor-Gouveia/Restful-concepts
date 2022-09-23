@@ -1,18 +1,11 @@
 FROM node:alpine
 
-WORKDIR /minu-books
+WORKDIR /apps/minubooks
 
 EXPOSE 3333
 
-# COPY . .
-COPY package.json .
+COPY . .
 
-COPY ./packages/server/package.json ./packages/server/
+RUN npm install
 
-COPY yarn.lock .
-COPY .yarnrc.yml .
-COPY .yarn ./.yarn
-
-RUN yarn
-
-ENTRYPOINT yarn workspace minubooks.server start
+ENTRYPOINT yarn start

@@ -1,6 +1,6 @@
 {
   "name": "minubooks",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "private": true,
   "version": "0.0.1",
   "description": "Este projeto tem como propósito treinar as minhas habilidades com MongoDB, Kafka e Docker.",
@@ -8,10 +8,8 @@
   "author": "Vitor Gouveia <vitor.gouveia@minu.co>",
   "license": "MIT",
   "scripts": {
-    "watch": "babel lib --watch --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
-    "dev": "nodemon dist",
-    "build": "babel lib --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "node dist/index.js",
+    "dev": "nodemon lib",
+    "start": "node lib/index.js",
     "lint": "eslint --fix --ext .js .",
     "test": "NODE_ENV=test && mocha **/test/**/*.spec.{js,mjs} --reporter spec"
   },
@@ -24,11 +22,6 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "mocha": "^10.0.0",
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.18.13",
-    "@babel/preset-env": "^7.18.10",
-    "babel-plugin-module-resolver": "^4.1.0",
-    "babel-preset-minify": "^0.5.2",
     "nodemon": "^2.0.19",
     "request": "^2.88.2"
   },
@@ -36,6 +29,7 @@
     "compression": "^1.7.4",
     "dotenv-safe": "^8.2.0",
     "express": "^4.18.1",
-    "helmet": "^6.0.0"
+    "helmet": "^6.0.0",
+    "redis": "^4.3.1"
   }
 }
