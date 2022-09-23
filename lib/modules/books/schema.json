@@ -1,0 +1,14 @@
+{
+  "id": "post-codes-request-body",
+  "description": "Schema do body da requisição POST /mpeweek/companies/codes",
+  "required": [
+    "cnpj"
+  ],
+  "properties": {
+    "cnpj": {
+      "description": "Identificador do cliente MPE Week",
+      "type": "string",
+      "minLength": 14
+    }
+  }
+}

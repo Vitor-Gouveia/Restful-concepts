@@ -1,0 +1,6 @@
+POST http://localhost:3333/books
+content-type: application/json
+
+{
+  "vitor": "gouveia"
+}
