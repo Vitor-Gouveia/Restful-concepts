@@ -1,0 +1,3 @@
+@id = 63372f37abf2e963ce16296a
+DELETE http://localhost:3333/books/{{id}}
+content-type: application/json

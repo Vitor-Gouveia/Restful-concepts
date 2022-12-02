@@ -1,0 +1,21 @@
+{
+  "id": "put-books-request-body",
+  "description": "Schema do body da requisição POST /books",
+  "required": [],
+  "properties": {
+    "title": {
+      "description": "Título do livro",
+      "type": "string",
+      "minLength": 1
+    },
+    "pages": {
+      "description": "Número de páginas do livro",
+      "type": "number"
+    },
+    "author": {
+      "description": "Nome do autor do livro",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
