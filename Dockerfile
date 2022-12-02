@@ -6,6 +6,8 @@ EXPOSE 3333
 
 COPY . .
 
-RUN npm install
+RUN ls -la
+RUN npm install -g pnpm
+RUN pnpm install
 
 ENTRYPOINT yarn start
