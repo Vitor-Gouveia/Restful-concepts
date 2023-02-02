@@ -1,8 +1,0 @@
-POST http://localhost:3333/books
-content-type: application/json
-
-{
-  "title": "Minu",
-  "pages": 200,
-  "author": "Minu"
-}

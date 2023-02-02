@@ -1,24 +1,45 @@
-# Minu.books
-Este projeto tem como propósito treinar as minhas habilidades com MongoDB, Kafka e Docker.
+# Dia 1
+REST é um acrônimo de, Representational State Transfer.
+É uma forma de desenvolver APIs, assim como SOAP.
+No caso, APIs REST utilizam da estrutura de dados JSON, diferente de SOAP que utiliza XML por exemplo.
+Quando se fala em desenvolver APIs com javascript, o REST é padrão da indústria.
 
-## Node.js
-### Conceitos a serem abordados
-- [ ] Arquitetura assíncrona e baseada em eventos
-- [ ] Estrutura de microsserviços
-- [ ] Containerização, aplicação do docker-compose
-- [ ] Autorização e Autenticação JWT
+## Regras
 
-### Objetivo
-Criar um servidor básico monolítico que é o core das funcionalidades do Minu.books.
-Depois quebrar o serviço monolítico em pequenos microsserviços independentes.
+### HTTP
+> Hypertext Transfer Protocol
+HTTP é o meio que websites e APIs se comunicam. O HTTP possui algumas formas diferentes de comunicação para diferentes necessidades, esses são os Métodos HTTP, como POST, OPTIONS, GET e DELETE. Esses metódos possuem algumas funcionalidades já pré-definidas, como o DELETE sendo para excluir/pedir exclusão de entidades e o GET para pegar recursos.
 
-### Funcionalidades do software
-- "Compilação" e minificação de Javascript com Babel/build step
-- Testes automatizados com Mocha
-- Containerização com docker-compose
+### Rotas
+Em uma API é padrão separar os conteúdos por rota, "/users" para acesso a recursos de usuário, "/posts" para acesso a recursos de posts e etc.
 
-## Next.js
-### Conceitos a serem abordados
-- [ ] Internacionalização
-- [ ] Optimistic UI
-- [ ] Mobile-first
+Essas rotas geralmente são feitas no plural e seguem algumas regras. Vamos levar a rota de "/users" como exemplo.
+
+/users      - Recursos de usuários
+/users/:id  - Recursos de usuários específicos (filtrados pela propriedade "id")
+
+### Métodos
+Existem também funcionalidades específicas relacionadas aos métodos HTTP
+
+get - utilizado para receber recursos
+head - retorna os _headers_ que o método GET normalmente retornaria
+post - utilizado para criar recursos
+put - utilizado para modificar recursos gerais
+patch - utilizado para modificar recursos específicos
+delete - utilizado para deletar recurso
+trace - trace retorna o estado do servidor
+options - retorna os métodos HTTP que aquela rota aceita
+connect - estabelece uma conexão segura com outro servidor
+
+Para classificar qual método utilizar ou não é possível utilizar a tabela abaixo.
+
+![tabela](https://raw.githubusercontent.com/equivalent/scrapbook2/master/assets/images/2016/put-patch-idempotance-table.png)]
+
+### Resposta HTTP
+Os códigos de resposta também são padronizados
+
+Camada 100 - Informacional
+Camada 200 - Sucesso
+Camada 300 - Redirecionamento
+Camada 400 - Erro de cliente
+Camada 500 - Erro de servidor

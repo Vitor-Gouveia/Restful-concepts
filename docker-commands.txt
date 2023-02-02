@@ -1,5 +1,0 @@
-building the image
-build -t vitorgouveia/minubooks:1.0 .
-
-running the immage
-docker run -d -p 3333:3333 vitorgouveia/minubooks:1.0
