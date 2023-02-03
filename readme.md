@@ -8,6 +8,7 @@ Quando se fala em desenvolver APIs com javascript, o REST é padrão da indústr
 
 ### HTTP
 > Hypertext Transfer Protocol
+
 HTTP é o meio que websites e APIs se comunicam. O HTTP possui algumas formas diferentes de comunicação para diferentes necessidades, esses são os Métodos HTTP, como POST, OPTIONS, GET e DELETE. Esses metódos possuem algumas funcionalidades já pré-definidas, como o DELETE sendo para excluir/pedir exclusão de entidades e o GET para pegar recursos.
 
 ### Rotas
