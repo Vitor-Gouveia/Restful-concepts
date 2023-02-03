@@ -43,3 +43,8 @@ Camada 200 - Sucesso
 Camada 300 - Redirecionamento
 Camada 400 - Erro de cliente
 Camada 500 - Erro de servidor
+
+# Dia 2
+Criei o meu próprio "express.js" para testar os conceitos REST. Nessa aplicação eu coloco em prática o meu conhecimento sobre alguns métodos HTTP e também minha habilidade em "clonar" bibliotecas.
+
+O código pode ser encontrado na pasta `examples/01` no arquivo `index.mjs`.
