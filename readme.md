@@ -49,3 +49,14 @@ Camada 500 - Erro de servidor
 Criei o meu próprio "express.js" para testar os conceitos REST. Nessa aplicação eu coloco em prática o meu conhecimento sobre alguns métodos HTTP e também minha habilidade em "clonar" bibliotecas.
 
 O código pode ser encontrado na pasta `examples/01` no arquivo `index.mjs`.
+
+# Dia 3
+## O que faz uma API RESTful?
+Existem algumas propriedades que tornam uma API RESTful.
+
+- Client separado do Servidor
+    O client e servidor não estão no mesmo diretório
+- Stateless
+    O request possui todas as informações necessárias para o servidor processar e devolver uma resposta
+- Cacheable
+    O servidor possui a habilidade de inserir informações em um cache para retornar mais rapidamente ao front-end
